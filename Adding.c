@@ -1,6 +1,6 @@
 #include <stdio.h>
-
 int main(){
+    printf("\n********************************Calculator***************************************************\n\n");
     float a,b,ans;
     ans = 0;
     char control;
