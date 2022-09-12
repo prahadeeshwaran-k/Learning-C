@@ -12,9 +12,9 @@ int main(){
     printf("---------------------LIST OF ADT USING ARRAY -------------------- ");
 
     while(1){
-        printf("\nThe Operations are:");
+    printf("\n---------------------------The Operations--------------------------");
         printf("\n1.create()\n2.insert()\n3.delete()\n4.display()\n5.exit()\n");
-        printf("\n Enter your Choice: ");
+        printf("\nEnter your Choice: ");
     scanf("%d",&c);
     switch(c){
         case 1:create();break;
@@ -46,12 +46,13 @@ int main(){
 
 void create(){
     int e,i;
-    printf("\nEnter The Number of Elements");
+    printf("\nEnter The Number of Elements in the list: ");
     scanf("%d",&e);
-    printf("\nEnter The Elements");
     for (i=0;i<e;i++){
-        n =e;
+        printf("\nEnter The Element %d :",i+1 );
+        scanf("%d",&list[i]);
     }
+    n =e;
 }
 
 
