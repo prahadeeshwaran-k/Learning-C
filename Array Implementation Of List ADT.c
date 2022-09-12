@@ -2,18 +2,22 @@
 #include <stdlib.h>
 int list[5],i,n=0;
 
-void creat();
+void create();
 void insert(int x,int p);
 void delete(int p);
 void display();
 
-void main(){
+int main(){
     int x,p,c;
     printf("---------------------LIST OF ADT USING ARRAY -------------------- ");
-    while(1){printf("\nThe Operations are:");
+
+    while(1){
+        printf("\nThe Operations are:");
+        printf("\n1.create()\n2.insert()\n3.delete()\n4.display()\n5.exit()\n");
+        printf("\n Enter your Choice: ");
     scanf("%d",&c);
     switch(c){
-        case 1:creat();break;
+        case 1:create();break;
         case 2:{
             printf("--------------------------------");
             printf("Enter the number of elements and Position: ");
@@ -40,7 +44,7 @@ void main(){
 }
 
 
-void creat(){
+void create(){
     int e,i;
     printf("\nEnter The Number of Elements");
     scanf("%d",&e);
