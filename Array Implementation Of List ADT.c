@@ -78,7 +78,7 @@ void delete(int p){
     }
     else{
         for (i=p;i<n;i++){list[i] = list[i+1];}
-        n++;
+        n--;
     }
 }
 
